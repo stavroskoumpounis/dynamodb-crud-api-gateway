@@ -24,6 +24,7 @@ functions:
       - http:
           path: record/{recordId}
           method: GET
+          cors: true
     iamRoleStatements:
       - Effect: "Allow"
         Action:
@@ -38,6 +39,7 @@ functions:
       - http:
           path: record
           method: POST
+          cors: true
     iamRoleStatements:
       - Effect: "Allow"
         Action:
@@ -52,6 +54,7 @@ functions:
       - http:
           path: record/{recordId}
           method: PUT
+          cors: true
     iamRoleStatements:
       - Effect: "Allow"
         Action:
@@ -66,6 +69,7 @@ functions:
       - http:
           path: record/{recordId}
           method: DELETE
+          cors: true
     iamRoleStatements:
       - Effect: "Allow"
         Action:
@@ -80,6 +84,7 @@ functions:
       - http:
           path: records
           method: GET
+          cors: true
     iamRoleStatements:
       - Effect: "Allow"
         Action:
